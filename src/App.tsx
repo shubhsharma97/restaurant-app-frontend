@@ -7,7 +7,8 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/restaurant-app-frontend/">
+      {/* ✅ basename tells React Router the subdirectory! */}
       <Routes>
         {/* Public routes */}
         <Route path="/register" element={<Register />} />
